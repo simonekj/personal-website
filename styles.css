@@ -1,0 +1,198 @@
+/* Color Palatte
+#C6878F
+#C7EAE4 Columbia Blue
+#A7E8BD Sea Foam Green
+#FCBCB8 Melon
+#FFD972 Orange-Yellow
+*/
+/*New Color Palatte
+#020292 dark blue
+#3E02D8 purple
+#EADAEA light pink
+#FFA69E salmon
+#FAF3DD pale pale yellow
+*/
+
+
+/* Global Styles */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 50px;
+}
+h2{
+  font-size: 30px;
+  margin-top: 0;
+  text-align: center;
+}
+h3 {
+  margin: 0;
+}
+a {
+  color: #FFD972;
+}
+a:hover {
+  text-decoration: none;
+  color: #C7EAE4;
+}
+.content-wrap{
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: auto;
+}
+.col-narrow {
+  width: 30%;
+  float: left;
+  /*min-height: 175px;*/
+}
+.col-wide {
+  width: 70%;
+  float: left;
+  padding-left: 20px;
+  /*min-height: 175px;*/
+
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: red;
+  color: white;
+  display: inline-block;
+}
+
+
+/* Header and Footer */
+header {
+  padding-top: 50px;
+  position: relative;
+}
+header, footer {
+background: #C6878F;
+color: #FCBCB8;
+}
+/*header*/
+.profile-img {
+  /*width: 300px;*/
+  border-radius: 50%;
+  /*float: left;*/
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+header {
+  /*text-align: center;*/
+
+}
+header h1, header h2 {
+  color: #FCBCB8;
+  margin: 0;
+  margin-left: 10px;
+  text-align: right;
+}
+/*footer*/
+footer {
+  text-align: center;
+}
+.contact-info a {
+  /*background: white;*/
+  margin: 10px;
+  display: inline-block;
+}
+/*Navigation*/
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%
+  /*left: 0;*/
+  /*right: 0*/
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+/*Projects*/
+.projects {
+  background: #FAF3DD;
+}
+h3 ~ p {
+  margin:0;
+}
+.proj-description {
+  margin-bottom: 25px;
+}
+
+/*Work Experience*/
+.work {
+  background: #C7EAE4;
+}
+h3 ~ p {
+  margin:0;
+}
+.job-description {
+  margin-bottom: 25px;
+}
+ /*p:first-of-type {
+  margin-top: 0;*/
+/*}*/
+
+/* Education */
+.education {
+  /*reverted to rgba (167, 232, 189, .5)*/
+  background: #A7E8BD;
+  /*background: linear-gradient(rgba(255, 255, 255, 0.8),
+               rgba(199,21,133, 0.5)),
+               url(https://unsplash.it/400/300) no-repeat fixed;
+ background-size: cover;*/
+}
+
+p + h3 {
+  margin-top: 30px;
+}
+/*Media Queries: */
+@@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+    /*min-height: 175px;*/
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    /*min-height: 175px;*/
+  }
+}
+@@media (max-width: 899px) {
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
+}
